@@ -28,8 +28,10 @@ export const AddToDoField = function AddToDoField(props) {
       <button type="submit" onClick={handleButtonClick}>
         Add
       </button>
-      <div class="error">{emptyToDoError && emptyToDoError}</div>
-      <div class="error">{toDoAlreadyExistError && toDoAlreadyExistError}</div>
+      <div className="error">{emptyToDoError && emptyToDoError}</div>
+      <div className="error">
+        {toDoAlreadyExistError && toDoAlreadyExistError}
+      </div>
     </form>
   );
 };
